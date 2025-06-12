@@ -26,10 +26,10 @@
 
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3          &kp N4     &kp N5                                             &kp N6                   &kp N7        &kp N8           &kp N9       &kp N0    &kp BACKSPACE
-&kp ESC    &kp Q   &kp W     &kp E           &kp R      &ht T LEFT_PARENTHESIS                             &ht Y RIGHT_PARENTHESIS  &kp U         &ht I RIGHT_ALT  &ht O RCTRL  &kp P     &kp MINUS
-&kp TAB    &kp A   &kp S     &kp D           &kp F      &ht G LEFT_BRACE                                   &ht H RIGHT_BRACE        &kp J         &kp K            &kp L        &kp SEMI  &kp SQT
-&mo 1      &kp Z   &kp X     &kp C           &kp V      &ht B LEFT_BRACKET       &kp C_MUTE    &kp C_MUTE  &ht N RIGHT_BRACKET      &kp M         &kp COMMA        &kp DOT      &kp FSLH  &mo 2
-                   &kp LGUI  &kp LEFT_ARROW  &kp RIGHT  &ht LEFT_SHIFT CAPSLOCK  &kp RET       &kp SPACE   &kp DELETE               &kp UP_ARROW  &kp DOWN_ARROW   &kp RGUI
+&kp ESC    &kp Q   &kp W     &kp E           &kp R      &mt T LEFT_PARENTHESIS                             &mt Y RIGHT_PARENTHESIS  &kp U         &mt I RIGHT_ALT  &mt O RCTRL  &kp P     &kp MINUS
+&kp TAB    &kp A   &kp S     &kp D           &kp F      &mt G LEFT_BRACE                                   &mt H RIGHT_BRACE        &kp J         &kp K            &kp L        &kp SEMI  &kp SQT
+&mo 1      &kp Z   &kp X     &kp C           &kp V      &mt B LEFT_BRACKET       &kp C_MUTE    &kp C_MUTE  &mt N RIGHT_BRACKET      &kp M         &kp COMMA        &kp DOT      &kp FSLH  &mo 2
+                   &kp LGUI  &kp LEFT_ARROW  &kp RIGHT  &mt LEFT_SHIFT CAPSLOCK  &kp RET       &kp SPACE   &kp DELETE               &kp UP_ARROW  &kp DOWN_ARROW   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
