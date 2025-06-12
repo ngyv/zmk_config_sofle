@@ -11,6 +11,19 @@
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
 / {
+    behaviors {
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -25,11 +38,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3          &kp N4     &kp N5                                             &kp N6                   &kp N7        &kp N8           &kp N9       &kp N0    &kp BACKSPACE
-&kp ESC    &kp Q   &kp W     &kp E           &kp R      &mt T LEFT_PARENTHESIS                             &mt Y RIGHT_PARENTHESIS  &kp U         &mt I RIGHT_ALT  &mt O RCTRL  &kp P     &kp MINUS
-&kp TAB    &kp A   &kp S     &kp D           &kp F      &mt G LEFT_BRACE                                   &mt H RIGHT_BRACE        &kp J         &kp K            &kp L        &kp SEMI  &kp SQT
-&mo 1      &kp Z   &kp X     &kp C           &kp V      &mt B LEFT_BRACKET       &kp C_MUTE    &kp C_MUTE  &mt N RIGHT_BRACKET      &kp M         &kp COMMA        &kp DOT      &kp FSLH  &mo 2
-                   &kp LGUI  &kp LEFT_ARROW  &kp RIGHT  &mt LEFT_SHIFT CAPSLOCK  &kp RET       &kp SPACE   &kp DELETE               &kp UP_ARROW  &kp DOWN_ARROW   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3          &kp N4     &kp N5                                                                 &kp N6                                 &kp N7        &kp N8                 &kp N9                     &kp N0    &kp BACKSPACE
+&kp ESC    &kp Q   &kp W     &kp E           &kp R      &hold_tap LEFT_PARENTHESIS LEFT_PARENTHESIS                            &hold_tap RIGHT_PARENTHESIS Y          &kp U         &hold_tap RIGHT_ALT I  &hold_tap RIGHT_CONTROL O  &kp P     &kp MINUS
+&kp TAB    &kp A   &kp S     &kp D           &kp F      &hold_tap LEFT_BRACE G                                                 &hold_tap RIGHT_BRACE H                &kp J         &kp K                  &kp L                      &kp SEMI  &kp SQT
+&mo 1      &kp Z   &kp X     &kp C           &kp V      &hold_tap LEFT_BRACKET B                     &kp C_MUTE    &kp C_MUTE  &hold_tap RIGHT_BRACKET RIGHT_BRACKET  &kp M         &kp COMMA              &kp DOT                    &kp FSLH  &mo 2
+                   &kp LGUI  &kp LEFT_ARROW  &kp RIGHT  &mt LEFT_SHIFT CAPSLOCK                      &kp RET       &kp SPACE   &kp DELETE                             &kp UP_ARROW  &kp DOWN_ARROW         &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
