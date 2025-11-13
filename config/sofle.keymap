@@ -53,7 +53,7 @@
 &kp EQUAL   &lt 1 Q  &hold_tap LEFT_COMMAND W  &hold_tap LEFT_CONTROL E  &hold_tap LEFT_ALT R  &kp T                                                   &kp Y              &hold_tap RIGHT_ALT U  &hold_tap RIGHT_CONTROL I  &hold_tap RIGHT_COMMAND O  &lt 1 P   &kp MINUS
 &kp TAB     &lt 2 A  &kp S                     &kp D                     &kp F                 &kp G                                                   &kp H              &kp J                  &kp K                      &lt 2 L                    &kp SEMI  &kp SQT
 &kp ESCAPE  &kp Z    &kp X                     &kp C                     &kp V                 &hold_tap LEFT_COMMAND B  &kp C_MUTE        &kp C_MUTE  &kp N              &kp M                  &kp COMMA                  &kp DOT                    &kp FSLH  &kp NON_US_BACKSLASH
-                     &kp TILDE                 &kp LEFT_ARROW            &kp RIGHT             &kp ENTER                 &kt LEFT_SHIFT    &kp SPACE   &kp RIGHT_COMMAND  &kp UP_ARROW           &kp DOWN_ARROW             &kp DELETE
+                     &kp TILDE                 &kp LEFT_ARROW            &kp RIGHT             &kp ENTER                 &kp LEFT_SHIFT    &kp SPACE   &kp RIGHT_COMMAND  &kp UP_ARROW           &kp DOWN_ARROW             &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
