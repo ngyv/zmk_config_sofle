@@ -51,7 +51,7 @@
             bindings = <
 &kp GRAVE   &kp N1   &kp N2                    &kp N3                    &kp N4                &kp N5                                                  &kp N6             &kp N7                 &kp N8                     &kp N9                     &kp N0    &kp BACKSPACE
 &kp EQUAL   &lt 1 Q  &hold_tap LEFT_COMMAND W  &hold_tap LEFT_CONTROL E  &hold_tap LEFT_ALT R  &kp T                                                   &kp Y              &hold_tap RIGHT_ALT U  &hold_tap RIGHT_CONTROL I  &hold_tap RIGHT_COMMAND O  &lt 1 P   &kp MINUS
-&kp TAB     &kp A    &kp S                     &kp D                     &kp F                 &kp G                                                   &kp H              &kp J                  &kp K                      &kp L                      &kp SEMI  &kp SQT
+&kp TAB     &lt 2 A  &kp S                     &kp D                     &kp F                 &kp G                                                   &kp H              &kp J                  &kp K                      &lt 2 L                    &kp SEMI  &kp SQT
 &kp ESCAPE  &kp Z    &kp X                     &kp C                     &kp V                 &hold_tap LEFT_COMMAND B  &kp C_MUTE        &kp C_MUTE  &kp N              &kp M                  &kp COMMA                  &kp DOT                    &kp FSLH  &kp NON_US_BACKSLASH
                      &kp TILDE                 &kp LEFT_ARROW            &kp RIGHT             &kp ENTER                 &kt LEFT_SHIFT    &kp SPACE   &kp RIGHT_COMMAND  &kp UP_ARROW           &kp DOWN_ARROW             &kp DELETE
             >;
